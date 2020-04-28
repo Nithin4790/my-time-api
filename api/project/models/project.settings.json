@@ -17,6 +17,10 @@
     },
     "manager": {
       "model": "employee"
+    },
+    "project_types": {
+      "via": "project",
+      "collection": "project-type"
     }
   }
 }

@@ -15,14 +15,23 @@
     "date": {
       "type": "string"
     },
-    "approved": {
-      "type": "string"
-    },
     "employee_id": {
       "model": "employee"
     },
     "approved_by": {
       "model": "employee"
+    },
+    "approved": {
+      "type": "boolean"
+    },
+    "project": {
+      "model": "project"
+    },
+    "project_type": {
+      "model": "project-type"
+    },
+    "task": {
+      "model": "task"
     }
   }
 }

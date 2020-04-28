@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_types",
+  "info": {
+    "name": "ProjectType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "project_type_id": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    },
+    "project": {
+      "model": "project",
+      "via": "project_types"
+    },
+    "tasks": {
+      "via": "project_type",
+      "collection": "task"
+    }
+  }
+}
