@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/timesheet-entries",
+      "handler": "timesheet-entry.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/timesheet-entries/count",
+      "handler": "timesheet-entry.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/timesheet-entries/:id",
+      "handler": "timesheet-entry.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/timesheet-entries",
+      "handler": "timesheet-entry.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/timesheet-entries/:id",
+      "handler": "timesheet-entry.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/timesheet-entries/:id",
+      "handler": "timesheet-entry.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -8,11 +8,11 @@
         "host": "127.0.0.1",
         "srv": false,
         "port": 27017,
-        "username": "",
-        "password": ""
+        "username": "my-time",
+        "password": "password"
       },
       "options": {
-        "authenticationDatabase": ""
+        "authenticationDatabase": "my-time"
       }
     }
   }

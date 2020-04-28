@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timesheet_entries",
+  "info": {
+    "name": "TimesheetEntry"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "timesheet_entry_Id": {
+      "type": "uid"
+    },
+    "date": {
+      "type": "string"
+    },
+    "approved": {
+      "type": "string"
+    },
+    "employee_id": {
+      "model": "employee"
+    },
+    "approved_by": {
+      "model": "employee"
+    }
+  }
+}
